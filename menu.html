@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="./menu.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+    <!--icon-->
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    
+    <!--responsive navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./englishindex.html">
+          <img
+            src="./images/LOGO.png"
+            alt="Logo"
+            width="150px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav px-5">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./englishindex.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown px-3">
+          <a
+            class="nav-link dropdown-toggle d-flex align-items-center"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/usa_logo.webp"
+              alt="French"
+              width="25px"
+              class="me-2"
+            />
+            <span class="language-text">English</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./frenchmenu.html"
+              >
+                <img
+                  src="./images/FRANCE_logo.png"
+                  alt="French"
+                  width="20px"
+                  class="me-2"
+                />
+                Français
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./menu.html"
+              >
+                <img
+                  src="./images/usa_logo.webp"
+                  alt="English"
+                  width="20px"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Cart Icon -->
+        <a href="./cart.html" class="cart-icon position-relative me-3">
+          <i class="fas fa-shopping-cart"></i>
+          <span
+            class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            0
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Menu section -->
+    <main>
+      <!--Apetizers Section-->
+      <section id="appetizers" class="menu-category">
+        <h2>Appetizers</h2>
+        <div class="menu-grid">
+          <!-- Card 1 -->
+          <div class="menu-card">
+            <img src="./images/menu-images/1.Kachori.png" alt="Kachori" class="menu-image"/>
+            <div class="menu-content">
+              <h3>Kachori</h3>
+              <p>Kachori is a deep-fried pastry filled with spiced lentils stuffing.</p>
+              <p class="price">€10.00 (includes 4 pieces)</p>
+              <!-- <p class="price-desc"> (4 pieces included)</p> -->
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Kachori" data-price="10" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/2.Papdi Chaat.jpg"
+              alt="Papdi Chaat"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Papdi Chaat</h3>
+              <p>
+                Papdi chaat is a popular Indian street food made with crispy
+                fried flour crackers (papdi), topped with a mix of spiced
+                potatoes, chickpeas, yogurt, tangy tamarind chutney, and
+                aromatic spices.
+              </p>
+              <p class="price">€6.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Papdi Chaat"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/3.DahiBhalla.png"
+              alt="Dahi Bhalla"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Dahi Bhalla</h3>
+              <p>
+                Soft lentil dumplings soaked in yogurt, spices, and chutneys.
+              </p>
+              <p class="price">€6.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Dahi Bhalla"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/4.Ram Laddu .png"
+              alt="Ram Laddu"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Ram Laddu</h3>
+              <p>
+                Crispy lentil fritters topped with radish, chutney, and spices.
+              </p>
+              <p class="price">€6.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Ram Laddu"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5-->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/5.Idli.png"
+              alt="Idli"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Idli</h3>
+              <p>
+                Steamed rice cakes served with chutney and flavorful sambar.
+              </p>
+              <p class="price">€5.00 (includes 4 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Idli"
+                  data-price="5"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/6.Vada.png"
+              alt="Vada"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Medu Vada</h3>
+              <p>
+                Crispy lentil donuts with soft centers, paired with chutney.
+              </p>
+              <p class="price">€6.00 (includes 4 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Medu Vada"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/7.DalVada.png"
+              alt="DalVada"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Dal Vada</h3>
+              <p>
+                Crunchy lentil fritters seasoned with spices, perfect tea-time
+                snack.
+              </p>
+              <p class="price">€5.00 (includes 4 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Dal Vada"
+                  data-price="5"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/8.Kothimbari vadi.png"
+              alt="Kothimbari vadi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Kothimbari Vadi</h3>
+              <p>
+                Coriander-based savory bites, steamed and fried, spiced to
+                perfection.
+              </p>
+              <p class="price">€6.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Kothimbari Vadi"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Section for confirmation of selected product -->
+      <div id="cart-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <h2>Item Added to Cart</h2>
+          <p id="modal-item"></p>
+          <p id="modal-quantity"></p>
+          <p id="modal-price"></p>
+        </div>
+      </div>
+      
+      <!-- Main Course Section -->
+      <section id="maincourse" class="menu-category">
+        <h2>Main Course</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/9.mutton dum biryani.png"
+              alt="mutton dum biryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Lamb Dum Biryani</h3>
+              <p>
+                Aromatic lamb biryani slow-cooked with spices, herbs, and
+                basmati rice.
+              </p>
+              <p class="price">€13.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Lamb Dum Biryani" data-price="13.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/10.ChickenDumBiryani.png"
+              alt="ChickenDumBiryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Chicken Dum Biryani</h3>
+              <p>
+                Flavorful chicken biryani layered with fragrant rice and spices.
+              </p>
+              <p class="price">€12.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Chicken Dum Biryani" data-price="12.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/11.Vegetable DumBiryani.png"
+              alt="Vegetable DumBiryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Vegetable Dum Biryani</h3>
+              <p>
+                Vegetable-loaded biryani with layers of rice, spices, and
+                flavors.
+              </p>
+              <p class="price">€11.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Vegetable Dum Biryani" data-price="11.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/12.Chickencurry.png"
+              alt="Chickencurry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Chicken Curry In-house Special</h3>
+              <p>Succulent chicken cooked in a fragrant blend of spices, delivering bold flavors with every bite</p>
+              <p class="price">€8.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Chicken Curry In-house Special" data-price="8.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/13.Lamb Curry.png"
+              alt="Lamb Curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Lamb Curry In-house Special</h3>
+              <p>Succulent lamb simmered in a rich blend of spices for a flavorful and hearty curry.</p>
+              <p class="price">€10.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Lamb Curry In-house Special" data-price="10.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/14.Mix Veg curry.png"
+              alt="Mix Veg curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Vegetable Curry In-house Special</h3>
+              <p>Mixed Vegetables Curry</p>
+              <p class="price">€7.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Vegetable Curry In-house Special" data-price="7.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/15.Matar Rice.png"
+              alt="Lamb Curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Matar/Zeera/Saffron Rice</h3>
+              <p>Basmati rice with Peas / Cumin / Saffron</p>
+              <p class="price">€4.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Matar/Zeera/Saffron Rice" data-price="4.9" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Desserts Section -->
+      <section id="desserts" class="menu-category">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/16.Apricotdelight.png"
+              alt="Apricotdelight"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Apricot Delight</h3>
+              <p>
+                Sweet apricot dessert layered with cream, apricots, and rich
+                flavors.
+              </p>
+              <p class="price">€10.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Apricot Delight" data-price="10" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/17.Gulabjamun.png"
+              alt="Gulabjamun"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Gulab Jamun</h3>
+              <p>
+                Deep-fried milk dumplings soaked in aromatic sugar syrup.
+              </p>
+              <p class="price">€5.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Gulab Jamun" data-price="5" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/18.Gajar Halwa with Rabdi .png"
+              alt="Gajar Halwa with Rabdi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Gajar Halwa with Rabdi</h3>
+              <p>
+                Carrot halwa topped with creamy, thickened milk, rich and
+                delicious.
+              </p>
+              <p class="price">€12.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Gajar Halwa with Rabdi" data-price="12" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/19.RasMalai.png"
+              alt="RasMalai"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>RasMalai</h3>
+              <p>
+                Soft paneer dumplings soaked in saffron-infused, sweetened milk.
+              </p>
+              <p class="price">€12.00 (includes 4 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="RasMalai" data-price="12" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beverages Section -->
+      <section id="beverages" class="menu-category">
+        <h2>Beverages</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Mango Lassi.png"
+              alt="Mango Lassi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Mango Lassi</h3>
+              <p>
+                Creamy yogurt drink blended with ripe mangoes and sugar.
+              </p>
+              <p class="price">€4.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Mango Lassi" data-price="4" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/rose_lassi_1.jpg"
+              alt="RoseLassi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Rose Lassi</h3>
+              <p>
+                Sweet yogurt drink infused with refreshing rose syrup flavor.
+              </p>
+              <p class="price">€4.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Rose Lassi" data-price="4" data-min-order="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snacks Section -->
+      <section id="snacks" class="menu-category">
+        <h2>Snacks</h2>
+        <div class="menu-grid">
+
+          <div class="menu-card">
+            <img src="./images/menu-images/22.Dryfruit Laddus.png" alt="Dryfruit Laddus"class="menu-image"/>
+            <div class="menu-content">
+              <h3>DryFruit Laddus</h3>
+              <p>Nut-packed energy balls made with ghee, nuts, seeds & dryfruits.</p>
+              <p class="price">€24.00 (includes 20 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="DryFruit Laddus" data-price="24" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/23.Uraddal Laddu.png"
+              alt="Uraddal Laddu"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Urad Dal Laddus</h3>
+              <p>
+                Sweet balls of roasted black gram flour and rich flavors.
+              </p>
+              <p class="price">€18.00 (includes 20 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Urad Dal Laddus" data-price="18" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/24.Cookies.png"
+              alt="Cookies"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Cookies</h3>
+              <p>
+                Crunchy, baked treats with endless flavors and delightful
+                textures.
+              </p>
+              <p class="price">€9.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Cookies" data-price="9" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/25.Cupcakes.png"
+              alt="Cupcakes"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Cup Cakes</h3>
+              <p>
+                Mini cakes with frosting, perfect for celebrations and sweet
+                cravings.
+              </p>
+              <p class="price">€9.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Cup Cakes" data-price="9" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Brownies.png"
+              alt="Brownies"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Brownies</h3>
+              <p>
+                Fudgy chocolate squares with a rich, decadent, and chewy
+                texture.
+              </p>
+              <p class="price">€12.00 (includes 6 pieces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="Brownies" data-price="12" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Carrot Cake.png"
+              alt="Teatime Cake"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>TeaTime Cakes (Carrot,Banana Walnut, Vanilla, Chocolate)</h3>
+              <p>
+                Light, spongy cakes ideal for enjoying with evening tea.
+              </p>
+              <p class="price">€6.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button class="add-to-cart-btn" data-item="TeaTime Cakes (Carrot,Banana Walnut, Vanilla, Chocolate)" data-price="6" data-min-order="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="./aboutus.html">about us</a></li>
+              <li><a href="./contactus.html">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="./englishindex.html#faq-section">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61570026141018"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/shammys_cuisine"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copywrite">
+        <p>&copy; 2025 ShammysCuisine. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./menu.js"></script>
+  </body>
+</html>

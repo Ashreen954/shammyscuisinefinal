@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="./menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--icon-->
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--responsive navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./images/LOGO.png"
+            alt="Logo"
+            width="150px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav px-5">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchmenu.html">La Carte</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchabout.html">À propos</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchcontact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown px-3">
+          <a
+            class="nav-link dropdown-toggle d-flex align-items-center"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/FRANCE_logo.png"
+              alt="French"
+              width="25px"
+              class="me-2"
+            />
+            <span class="language-text">Français</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./frenchmenu.html"
+              >
+                <img
+                  src="./images/FRANCE_logo.png"
+                  alt="French"
+                  width="20px"
+                  class="me-2"
+                />
+                Français
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./menu.html"
+              >
+                <img
+                  src="./images/usa_logo.webp"
+                  alt="English"
+                  width="20px"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Cart Icon -->
+        <a href="./frenchcart.html" class="cart-icon position-relative me-3">
+          <i class="fas fa-shopping-cart"></i>
+          <span
+            class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            0
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Menu section -->
+    <main>
+      <!--Apetizers Section-->
+      <section id="appetizers" class="menu-category">
+        <h2>Entrées</h2>
+        <!-- <h2 class="description-en">Appetizers</h2> -->
+        <!-- <h2>Entrées</h2> -->
+        <div class="menu-grid">
+          <!-- Card 1 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/1.Kachori.png"
+              alt="Kachori"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Kachori</h3>
+              <p>
+                Une farce à base de lentilles dans une boule de farine cuite
+                dans de l’huile
+              </p>
+              <p class="price">€10.00 (comprend 4 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Kachori"
+                  data-price="10"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/2.Papdi Chaat.jpg"
+              alt="Papdi Chaat"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Papdi Chaat</h3>
+              <p>
+                Le papdi chaat est un célèbre snack indien composé de galettes
+                croustillantes frites (papdi), garnies de pommes de terre
+                épicées, pois chiches, yaourt, chutney de tamarin acidulé et
+                d'épices aromatiques.
+              </p>
+              <p class="price">€6.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Papdi Chaat"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/3.DahiBhalla.png"
+              alt="Dahi Bhalla"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Dahi Bhalla</h3>
+              <p>
+                Boulettes de lentilles moelleuses dans du yaourt, épices et
+                chutneys.
+              </p>
+              <p class="price">€6.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Dahi Bhalla"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/4.Ram Laddu .png"
+              alt="Ram Laddu"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Ram Laddu</h3>
+              <p>
+                Beignets de lentilles croustillants garnis de radis et chutneys.
+              </p>
+              <p class="price">€6.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Ram Laddu"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5-->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/5.Idli.png"
+              alt="Idli"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Idli</h3>
+              <p>
+                Gâteaux de riz vapeur servis avec chutney et sambar savoureux.
+              </p>
+              <p class="price">€5.00 (comprend 4 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Idli"
+                  data-price="5"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/6.Vada.png"
+              alt="Vada"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Medu Vada</h3>
+              <p>
+                Beignets de lentilles croustillants, moelleux au centre, avec
+                chutney.
+              </p>
+              <p class="price">€6.00 (comprend 4 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Medu Vada"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/7.DalVada.png"
+              alt="DalVada"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Dal Vada</h3>
+              <p>
+                Beignets de lentilles épicés et croustillants, parfaits pour le
+                thé.
+              </p>
+              <p class="price">€5.00 (comprend 4 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Dal Vada"
+                  data-price="5"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/8.Kothimbari vadi.png"
+              alt="Kothimbari vadi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Kothimbari Vadi</h3>
+              <p>
+                Bouchées savoureuses à la coriandre, cuites à la vapeur et
+                frites.
+              </p>
+              <p class="price">€6.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Kothimbari Vadi"
+                  data-price="6"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Section for confirmation of selected product -->
+      <div id="cart-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <h2>Item Added to Cart</h2>
+          <p id="modal-item"></p>
+          <p id="modal-quantity"></p>
+          <p id="modal-price"></p>
+        </div>
+      </div>
+
+      <!-- Main Course Section -->
+      <section id="maincourse" class="menu-category">
+        <h2>Plats</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/9.mutton dum biryani.png"
+              alt="mutton dum biryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Biryani Agneau</h3>
+              <p>
+                Biryani d'agneau parfumé, mijoté avec riz basmati et épices.
+              </p>
+              <p class="price">€13.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Biryani Agneau"
+                  data-price="13.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/10.ChickenDumBiryani.png"
+              alt="ChickenDumBiryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Biryani Poulet</h3>
+              <p>
+                Biryani au poulet épicé et riz basmati délicatement parfumé.
+              </p>
+              <p class="price">€12.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Biryani Poulet"
+                  data-price="12.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/11.Vegetable DumBiryani.png"
+              alt="Vegetable DumBiryani"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Biryani légumes</h3>
+              <p>Biryani végétarien avec légumes, riz parfumé et épices.</p>
+              <p class="price">€11.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Biryani légumes"
+                  data-price="11.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/12.Chickencurry.png"
+              alt="Chickencurry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Curry Poulet</h3>
+              <p>
+                Poulet tendre mijoté dans un mélange parfumé d'épices, offrant
+                des saveurs intenses à chaque bouchée
+              </p>
+              <p class="price">€8.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Curry Poulet"
+                  data-price="8.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/13.Lamb Curry.png"
+              alt="Lamb Curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Curry Agneau</h3>
+              <p>
+                Agneau fondant mijoté dans un mélange riche d'épices pour un
+                curry savoureux et généreux
+              </p>
+              <p class="price">€10.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Curry Agneau"
+                  data-price="10.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/14.Mix Veg curry.png"
+              alt="Mix Veg curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Mix légumes</h3>
+              <p>
+                Curry de légumes mélangés avec sauce traditionnelle et
+                moyennement épicée
+              </p>
+              <p class="price">€7.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Mix légumes"
+                  data-price="7.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/15.Matar Rice.png"
+              alt="Lamb Curry"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Riz Petit Pois/Cumin/Safran</h3>
+              <p>Riz basmati avec petits pois / Cumin/Safran</p>
+              <p class="price">€4.9</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Riz Petit Pois/Cumin/Safran"
+                  data-price="4.9"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Desserts Section -->
+      <section id="desserts" class="menu-category">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/16.Apricotdelight.png"
+              alt="Apricotdelight"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Délice d'abricot</h3>
+              <p>Dessert sucré d'abricots en couches avec crème délicieuse.</p>
+              <p class="price">€10.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Délice d'abricot"
+                  data-price="10"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/17.Gulabjamun.png"
+              alt="Gulabjamun"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Gulab Jamun</h3>
+              <p>Boulettes de lait frites trempées dans un sirop aromatisé.</p>
+              <p class="price">€5.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Gulab Jamun"
+                  data-price="5"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/18.Gajar Halwa with Rabdi .png"
+              alt="Gajar Halwa with Rabdi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Halwa de carottes avec Rabdi</h3>
+              <p>Halwa de carottes nappé de lait épaissi et crémeux.</p>
+              <p class="price">€12.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Halwa de carottes avec Rabdi"
+                  data-price="12"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/19.RasMalai.png"
+              alt="RasMalai"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>RasMalai</h3>
+              <p>Boulettes de paneer trempées dans du lait sucré au safran.</p>
+              <p class="price">€12.00 (comprend 4 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="RasMalai"
+                  data-price="12"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beverages Section -->
+      <section id="beverages" class="menu-category">
+        <h2>Boissons</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Mango Lassi.png"
+              alt="Mango Lassi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Lassi Mangue</h3>
+              <p>
+                Boisson crémeuse au yaourt mélangée avec mangues mûres et sucre.
+              </p>
+              <p class="price">€4.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Lassi Mangue"
+                  data-price="4"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/rose_lassi_1.jpg"
+              alt="RoseLassi"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Lassi Rose</h3>
+              <p>Boisson sucrée au yaourt infusée de sirop de rose.</p>
+              <p class="price">€4.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">3</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Lassi Rose"
+                  data-price="4"
+                  data-min-order="3"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snacks Section -->
+      <section id="snacks" class="menu-category">
+        <h2>Snacks</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/22.Dryfruit Laddus.png"
+              alt="Dryfruit Laddus"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>DryFruit Laddus</h3>
+              <p>Boules énergétiques aux fruits secs, ghee et sucre.</p>
+              <p class="price">€24.00 (comprend 20 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="DryFruit Laddus"
+                  data-price="24"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/23.Uraddal Laddu.png"
+              alt="Uraddal Laddu"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Urad Dal Laddus</h3>
+              <p>
+                Boules sucrées de farine de lentilles noires grillées et ghee.
+              </p>
+              <p class="price">€18.00 (comprend 20 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Urad Dal Laddus"
+                  data-price="18"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/24.Cookies.png"
+              alt="Cookies"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Cookies</h3>
+              <p>
+                Biscuits croustillants aux saveurs variées et textures
+                délicieuses.
+              </p>
+              <p class="price">€9.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Cookies"
+                  data-price="9"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/25.Cupcakes.png"
+              alt="Cupcakes"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Cup Cakes</h3>
+              <p>
+                Mini-gâteaux glacés, parfaits pour célébrations et envies
+                sucrées.
+              </p>
+              <p class="price">€9.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Cup Cakes"
+                  data-price="9"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Brownies.png"
+              alt="Brownies"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>Brownies</h3>
+              <p>
+                Carrés chocolatés fondants, riches, et au goût intense et
+                gourmand.
+              </p>
+              <p class="price">€12.00 (comprend 6 pièces)</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="Brownies"
+                  data-price="12"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./images/menu-images/Carrot Cake.png"
+              alt="Teatime Cake"
+              class="menu-image"
+            />
+            <div class="menu-content">
+              <h3>TeaTime Cakes (Carrot,Banana Walnut, Vanilla, Chocolate)</h3>
+
+              <p>
+                Gâteaux légers et moelleux parfaits pour accompagner le thé.
+              </p>
+              <p class="price">€6.00</p>
+              <div class="cart-controls">
+                <button class="decrement">-</button>
+                <span class="quantity">2</span>
+                <button class="increment">+</button>
+                <button
+                  class="add-to-cart-btn"
+                  data-item="TeaTime Cakes (Carrot,Banana Walnut, Vanilla, Chocolate)"
+                  data-price="6"
+                  data-min-order="2"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="./frenchabout.html">À propos</a></li>
+              <li><a href="./frenchcontact.html">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Obtenir de l'aide</h4>
+            <ul>
+              <li><a href="./index.html#faq-section">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61570026141018"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/shammys_cuisine"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copywrite">
+        <p>&copy; 2025 ShammysCuisine. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const menuCards = document.querySelectorAll(".menu-card");
+    const cartBadge = document.querySelector(".cart-badge"); // Sélectionner l'élément du badge du panier
+    let cartCount = parseInt(localStorage.getItem("cartCount")) || 0; // Charger le nombre d'articles du panier depuis le localStorage
+
+    // Définir le nombre initial d'articles dans le panier
+    cartBadge.textContent = cartCount;
+    menuCards.forEach(card => {
+        const addToCartButton = card.querySelector('.add-to-cart-btn');
+        if (!addToCartButton) {
+            console.warn("Bouton Ajouter au panier introuvable dans la carte:", card);
+            return; // Ignorer cette carte si le bouton est manquant
+        }
+
+        const minOrder = parseInt(addToCartButton.dataset.minOrder || "1", 10); // Par défaut à 1 si manquant
+        const quantityElement = card.querySelector('.quantity');
+        const incrementButton = card.querySelector('.increment');
+        const decrementButton = card.querySelector('.decrement');
+
+        if (!quantityElement || !incrementButton || !decrementButton) {
+            console.warn("Éléments requis manquants dans la carte:", card);
+            return;
+        }
+        const minOrderMessage = document.createElement('p'); // Créer l'élément de message de quantité minimale
+        let quantity = minOrder; // Initialiser la quantité à la valeur de la commande minimale
+
+        // Configurer le message de commande minimale
+        minOrderMessage.textContent = `La quantité minimale de commande est ${minOrder}`;
+        minOrderMessage.style.color = "red";
+        minOrderMessage.style.display = "none"; // Masquer le message initialement
+        card.querySelector('.menu-content').appendChild(minOrderMessage); // Ajouter le message à la carte
+
+        // Initialiser l'affichage de la quantité
+        quantityElement.textContent = quantity;
+
+        incrementButton.addEventListener('click', () => {
+            quantity++;
+            quantityElement.textContent = quantity;
+            if (quantity >= minOrder) {
+                minOrderMessage.style.display = "none"; // Masquer le message si la quantité >= commande minimale
+            }
+        });
+
+        decrementButton.addEventListener('click', () => {
+            if (quantity > minOrder) {
+                quantity--; // Permettre la diminution uniquement si la quantité > commande minimale
+                quantityElement.textContent = quantity;
+                minOrderMessage.style.display = "none"; // Masquer le message
+            } else {
+                minOrderMessage.style.display = "block"; // Afficher le message
+            }
+        });
+        addToCartButton.addEventListener('click', () => {
+            if (quantity >= minOrder) {
+                const item = addToCartButton.dataset.item;
+                const price = addToCartButton.dataset.price;
+                const imageUrl = card.querySelector('.menu-image').src; // Récupérer l'URL de l'image
+        
+                // Stocker les données de l'article incluant minOrder, quantité, prix et URL de l'image dans localStorage
+                const cartItem = { quantity, price, imageUrl, minOrder };
+                localStorage.setItem(item, JSON.stringify(cartItem));
+        
+                // Maintenir l'ordre des articles dans un tableau séparé
+                let itemsOrder = JSON.parse(localStorage.getItem("itemsOrder")) || [];
+                if (!itemsOrder.includes(item)) {
+                    itemsOrder.push(item);
+                }
+                localStorage.setItem("itemsOrder", JSON.stringify(itemsOrder));
+        
+                // Définir le contenu du modal
+                document.getElementById('modal-item').textContent = `Article: ${item}`;
+                document.getElementById('modal-quantity').textContent = `Quantité: ${quantity}`;
+                document.getElementById('modal-price').textContent = `Prix: €${(quantity * price).toFixed(2)}`;
+        
+                // Afficher le modal
+                const modal = document.getElementById('cart-modal');
+                modal.style.display = 'block';
+        
+                // Logique de fermeture du modal
+                const closeModal = document.getElementById('close-modal');
+                closeModal.onclick = () => {
+                    modal.style.display = 'none';
+                };
+        
+                // Fermer le modal lorsqu'on clique en dehors de celui-ci
+                window.onclick = (event) => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                };
+        
+                // Mettre à jour le nombre d'articles du panier et le sauvegarder dans le localStorage
+                cartCount++; // Incrémenter le nombre d'articles dans le panier
+                cartBadge.textContent = cartCount; // Mettre à jour le texte du badge
+                localStorage.setItem("cartCount", cartCount); // Sauvegarder le nombre d'articles mis à jour
+            } else {
+                alert(`Veuillez commander au moins ${minOrder} articles de ${addToCartButton.dataset.item}.`);
+            }
+        });
+        
+    });
+});
+
+    </script>
+  </body>
+</html>

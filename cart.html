@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--icon-->
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <head>
+      <!-- Add this line in the <head> section to include Font Awesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+  
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!--responsive navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./englishindex.html">
+          <img
+            src="./images/LOGO.png"
+            alt="Logo"
+            width="150px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav px-5">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./englishindex.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown px-3">
+          <a
+            class="nav-link dropdown-toggle d-flex align-items-center"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/usa_logo.webp"
+              alt="French"
+              width="25px"
+              class="me-2"
+            />
+            <span class="language-text">English</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./frenchcart.html"
+              >
+                <img
+                  src="./images/FRANCE_logo.png"
+                  alt="French"
+                  width="20px"
+                  class="me-2"
+                />
+                Français
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./cart.html"
+              >
+                <img
+                  src="./images/usa_logo.webp"
+                  alt="English"
+                  width="20px"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Cart Icon -->
+        <a href="./cart.html" class="cart-icon position-relative me-3">
+          <i class="fas fa-shopping-cart"></i>
+          <span
+            class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            0
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="container">
+      <h2>Your Cart</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </tbody>
+      </table>
+      <h3 id="total-bill">Total: €0.00</h3>
+      <button id="confirm-order" class="btn btn-primary">
+        <i class="fab fa-whatsapp"></i> Save and Confirm Order
+      </button>
+      </main>
+    
+     <!--footer-->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="./aboutus.html">about us</a></li>
+              <li><a href="./contactus.html">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="./englishindex.html#faq-section">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61570026141018"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/shammys_cuisine"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copywrite">
+        <p>&copy; 2025 ShammysCuisine. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  
+    <script src="cart.js"></script>
+  </body>
+</html>

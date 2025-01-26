@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restraunt.com</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--responsive navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./images/LOGO.png"
+            alt="Logo"
+            width="150px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav px-5">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchmenu.html">La Carte</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchabout.html">À propos</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./frenchcontact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown px-3">
+          <a
+            class="nav-link dropdown-toggle d-flex align-items-center"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/FRANCE_logo.png"
+              alt="French"
+              width="25px"
+              class="me-2"
+            />
+            <span class="language-text">Français</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./index.html"
+              >
+                <img
+                  src="./images/FRANCE_logo.png"
+                  alt="French"
+                  width="20px"
+                  class="me-2"
+                />
+                Français
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="./englishindex.html"
+              >
+                <img
+                  src="./images/usa_logo.webp"
+                  alt="English"
+                  width="20px"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Cart Icon -->
+        <a href="./frenchcart.html" class="cart-icon position-relative me-3">
+          <i class="fas fa-shopping-cart"></i>
+          <span
+            class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            0
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!--Header Content  -->
+      <header class="header">   
+        <div class="text-content">
+          <p class="subtext">Chaque repas raconte une histoire</p>
+          <h1 class="main-heading">Frais !!! Fait maison !!! Et inoubliable !!!</h1>
+          <p class="description">Shammy's Cuisine : Votre destination pour des saveurs exquises</p>
+        </div>
+      </header>
+
+    <!-- Top dishes -->
+    <div>
+      <h1 style="text-align: center; margin-top: 20px;" id="signature-heading">Nos plats signatures</h1>
+      <!-- <h1 style="text-align: center; margin-top: 20px;">Must-Try Delicacies</h1> -->
+      <div class="dishes-container">
+        <div class="dish">
+          <img src="./images/menu-images/1.Kachori.png" alt="Kachori">
+          <h3>Kachori</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/4.Ram Laddu .png" alt="Ram Laddu">
+          <h3>Ram Laddu</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/7.DalVada.png" alt="Dal Vada">
+          <h3>Dal Vada</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/10.ChickenDumBiryani.png" alt="Chicken Dum Biryani">
+          <h3>Biryani Poulet</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/13.Lamb Curry.png" alt="Chicken/Lamb Curry">
+          <h3>Curry de poulet/agneau</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/18.Gajar Halwa with Rabdi .png" alt="Gajar Halwa with Rabdi">
+          <h3>Halwa de carottes avec Rabdi</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/19.RasMalai.png" alt="RasMalai">
+          <h3>RasMalai</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/22.Dryfruit Laddus.png" alt="DryFruit Laddus">
+          <h3>DryFruit Laddus</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/24.Cookies.png" alt="Cookies">
+          <h3>Cookies</h3>
+        </div>
+        <div class="dish">
+          <img src="./images/menu-images/Carrot Cake.png" alt="Tea Time Cakes">
+          <h3>Tea Time Cakes</h3>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+
+   
+    <h1 id="sub-heading">Découvrez le goût de l'excellence !</h1>
+
+    <!-- Menu cards -->
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./images/menu-images/1.Kachori.png" alt="Appetizers">
+        <div class="card-body">
+          <h5 class="card-title">Entrées </h5>
+          <p class="card-text">Start your meal with delightful appetizers</p>
+          <a href="./menu.html#appetizers" class="explore-btn">Découvrez plus...</a>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./images/menu-images/10.ChickenDumBiryani.png" alt="Main Course">
+        <div class="card-body">
+          <h5 class="card-title">Plats</h5>
+          <p class="card-text">Delicious main courses for a fulfilling meal</p>
+          <a href="./menu.html#maincourse" class="explore-btn">Découvrez plus...</a>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./images/menu-images/19.RasMalai.png" alt="Desserts">
+        <div class="card-body">
+          <h5 class="card-title">Desserts</h5>
+          <p class="card-text">End your meal with delightful, sweet treats</p>
+          <a href="./menu.html#desserts" class="explore-btn">Découvrez plus...</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->  
+      <div class="card">
+        <img src="./images/menu-images/Mango Lassi.png" alt="Beverages">
+        <div class="card-body">
+          <h5 class="card-title">Boissons</h5>
+          <p class="card-text">Refresh yourself with our beverage options</p>
+          <a href="./menu.html#beverages" class="explore-btn">Découvrez plus...</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="./images/menu-images/Brownies.png" alt="Snacks">
+        <div class="card-body">
+          <h5 class="card-title">Snacks</h5>
+          <p class="card-text">Perfect delicious snacks for any time of the day</p>
+          <a href="./menu.html#snacks" class="explore-btn">Découvrez plus...</a>
+        </div>
+      </div>
+    </div>    
+
+      <!-- FAQ Section -->
+<section>
+  <div id="faq-section" class="box">
+    <h1>Questions fréquentes</h1>
+
+    <!-- General -->
+    <details>
+      <summary>Général</summary>
+      <div class="faqs">
+        <details>
+          <summary>Quel type de nourriture proposez-vous ?</summary>
+          <p>Nous sommes spécialisés dans des plats faits maison, frais et authentiques, inspirés de recettes traditionnelles et adaptés à vos goûts.</p>
+        </details>
+        <details>
+          <summary>Où êtes-vous situés ?</summary>
+          <p>Nous opérons à Rueil-Malmaison.</p>
+        </details>
+        <details>
+          <summary>Vos ingrédients sont-ils frais ?</summary>
+          <p>Absolument ! Nous utilisons uniquement des ingrédients frais et de haute qualité pour préparer chaque plat.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Ordering -->
+    <details>
+      <summary>Commandes</summary>
+      <div class="faqs">
+        <details>
+          <summary>Comment passer une commande ?</summary>
+          <p>Vous pouvez commander directement sur notre site internet en ajoutant les articles au panier et en cliquant sur « confirmer la commande ». Nous recevrons votre commande via WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Combien de temps à l’avance dois-je passer ma commande ?</summary>
+          <p>Nous recommandons de passer votre commande au moins 24 à 48 heures à l’avance pour garantir la livraison.</p>
+        </details>
+        <details>
+          <summary>Y a-t-il un montant minimum pour commander ?</summary>
+          <p>Oui, la commande minimum est de 50 €.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Delivery -->
+    <details>
+      <summary>Livraison</summary>
+      <div class="faqs">
+        <details>
+          <summary>Proposez-vous des services de livraison ?</summary>
+          <p>Oui, nous livrons à Rueil-Malmaison et dans les environs. Des frais de livraison peuvent s’appliquer en fonction de votre emplacement.</p>
+        </details>
+        <details>
+          <summary>Puis-je récupérer ma commande moi-même ?</summary>
+          <p>Oui, le retrait sur place est possible. Merci de nous informer lors de votre commande.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Customization & Special Requests -->
+    <details>
+      <summary>Personnalisation & Demandes spéciales</summary>
+      <div class="faqs">
+        <details>
+          <summary>Puis-je demander des personnalisations pour mon repas ?</summary>
+          <p>Oui, nous sommes ravis de répondre à vos préférences alimentaires ou demandes spéciales. Merci de nous en informer lors de la commande.</p>
+        </details>
+        <details>
+          <summary>Proposez-vous des options végétariennes ou véganes ?</summary>
+          <p>Oui, nous avons une variété de plats végétariens et véganes disponibles.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Payments -->
+    <details>
+      <summary>Paiements</summary>
+      <div class="faqs">
+        <details>
+          <summary>Quels moyens de paiement acceptez-vous ?</summary>
+          <p>Nous acceptons les paiements en espèces et en ligne, comme PayPal.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Others -->
+    <details>
+      <summary>Autres</summary>
+      <div class="faqs">
+        <details>
+          <summary>Proposez-vous un service traiteur pour des événements ou des fêtes ?</summary>
+          <p>Oui, nous proposons des services traiteur pour des petits événements et rassemblements. Contactez-nous pour plus de détails.</p>
+        </details>
+        <details>
+          <summary>Comment puis-je vous contacter ?</summary>
+          <p>Vous pouvez nous joindre par téléphone, email ou via le formulaire de contact sur notre site internet.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Food Quality & Preparation -->
+    <details>
+      <summary>Qualité & Préparation des repas</summary>
+      <div class="faqs">
+        <details>
+          <summary>Vos plats sont-ils préparés frais tous les jours ?</summary>
+          <p>Oui, tous nos plats sont préparés frais chaque jour en petites quantités pour garantir la qualité et la saveur.</p>
+        </details>
+        <details>
+          <summary>Utilisez-vous des conservateurs dans vos plats ?</summary>
+          <p>Non, nos plats sont 100 % sans conservateurs, additifs ou arômes artificiels.</p>
+        </details>
+        <details>
+          <summary>Vos plats sont-ils halal/kasher ?</summary>
+          <p>Oui, nous préparons des repas halal sur demande. Merci de préciser votre préférence lors de la commande.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Health & Safety -->
+    <details>
+      <summary>Santé & Sécurité</summary>
+      <div class="faqs">
+        <details>
+          <summary>Quelles mesures prenez-vous pour garantir la sécurité alimentaire ?</summary>
+          <p>Nous suivons des pratiques strictes d’hygiène et respectons des normes élevées de sécurité alimentaire pendant la préparation et la livraison.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Offers & Discounts -->
+    <details>
+      <summary>Offres & Réductions</summary>
+      <div class="faqs">
+        <details>
+          <summary>Proposez-vous des réductions pour des commandes en gros ?</summary>
+          <p>Oui, nous offrons des réductions pour les grandes commandes ou commandes en gros. Contactez-nous pour un devis personnalisé.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Custom Orders & Seasonal Menus -->
+    <details>
+      <summary>Commandes sur mesure & Menus saisonniers</summary>
+      <div class="faqs">
+        <details>
+          <summary>Puis-je commander un plat qui ne figure pas sur le menu ?</summary>
+          <p>Oui, nous pouvons répondre à des demandes spéciales selon les disponibilités. Contactez-nous pour plus de détails.</p>
+        </details>
+        <details>
+          <summary>Avez-vous des menus saisonniers ou festifs ?</summary>
+          <p>Oui, nous créons des menus spéciaux pour les fêtes et les saisons festives. Consultez notre site internet pour les mises à jour.</p>
+        </details>
+        <details>
+          <summary>Puis-je précommander pour une date ultérieure ?</summary>
+          <p>Oui, nous acceptons les précommandes jusqu’à 21 jours à l’avance.</p>
+        </details>
+      </div>
+    </details>
+
+    <!-- Customer Support -->
+    <details>
+      <summary>Service client</summary>
+      <div class="faqs">
+        <details>
+          <summary>Que faire s’il y a un problème avec ma commande ?</summary>
+          <p>Merci de nous contacter immédiatement par téléphone ou email. Nous réglerons le problème rapidement.</p>
+        </details>
+        <details>
+          <summary>Comment puis-je laisser un avis ou un commentaire ?</summary>
+          <p>Nous apprécions vos retours ! Vous pouvez laisser un avis sur notre site internet, nos réseaux sociaux ou nous écrire directement par email.</p>
+        </details>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+
+      <!-- Customer Reviews Section -->      
+       <!--<div class="section__container">
+        <div class="header-test">
+            <p>Témoignages</p>
+            <h1>Ce que nos clients disent de nous.</h1>
+        </div>
+        <div class="testimonials__slider">
+            <div class="testimonials__track">
+                <div class="card-test">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>Shammy's Cuisine made our birthday party unforgettable! The food was delicious, and everything was delivered perfectly on time.</p>
+                    <hr />
+                    <p class="name">Allan Collins</p>
+                </div>
+                <div class="card-test">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>We ordered for a family get-together, and everyone raved about the biryani and kebabs. Thank you for making it so special!</p>
+                    <hr />
+                    <p class="name">Clay Washington</p>
+                </div>
+                <div class="card-test">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>The food arrived hot and fresh, ready to serve. It felt like dining at a high-end restaurant but in the comfort of our home!</p>
+                    <hr />
+                    <p class="name">Tanya Grant</p>
+                </div>
+                <div class="card-test">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>The customer service was exceptional. They catered to all our needs and made sure we had the perfect experience!</p>
+                    <hr />
+                    <p class="name">Jessica Hall</p>
+                </div>
+                <div class="card-test">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>A fantastic dining experience! Every dish was flavorful, and the delivery was seamless. Highly recommended!</p>
+                    <hr />
+                    <p class="name">Robert White</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+      <!--footer-->
+      <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="./aboutus.html">À propos</a></li>
+                        <li><a href="./contactus.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obtenir de l'aide</h4>
+                    <ul>
+                        <li><a href="./index.html#faq-section">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570026141018"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/shammys_cuisine"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copywrite">
+            <p>&copy; 2025 ShammysCuisine. Tous droits réservés.</p>
+        </div>
+      </footer>
+
+   
+    <script src="homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
