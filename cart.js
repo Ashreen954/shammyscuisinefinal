@@ -256,7 +256,7 @@ function sendOrderDetailsToWhatsApp() {
     serialNumber++; // Increment serial number for next item
   });
 
-  orderSummary += `\nTotal: €${totalBill.toFixed(2)}\n Discounted Total: €${discountedTotal.toFixed(2)}\nThank you for your attention to my order!`;
+  orderSummary += `\nTotal: €${totalBill.toFixed(2)}\n\nThank you for your attention to my order!`;
 
   // Encode the message for WhatsApp
   const message = encodeURIComponent(orderSummary);

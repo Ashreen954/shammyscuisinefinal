@@ -264,7 +264,7 @@ function sendOrderDetailsToWhatsApp() {
     const message = encodeURIComponent(orderSummary);
   
     // Numéro WhatsApp (Remplacez par le numéro réel)
-    const whatsappNumber = "+33755990317";
+    const whatsappNumber = "+33766155323";
   
     // Construire l'URL WhatsApp avec le message encodé
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
