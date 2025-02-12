@@ -3,6 +3,7 @@ const totalBillElement = document.getElementById("total-bill");
 const cartBadge = document.querySelector(".cart-badge");
 const cartHeading = document.querySelector("h2");
 
+
 let totalBill = 0;
 
 // Function to update the cart count displayed on the badge
@@ -257,8 +258,15 @@ function sendOrderDetailsToWhatsApp() {
       totalBill += itemTotal;
       serialNumber++; // Incrémenter le numéro de série pour l'article suivant
     });
+    let discount = 0;
+    if (totalBill >= 200) {
+      discount = 0.1;  // 10% discount for orders >= 200€
+    } else if (totalBill >= 100) {
+      discount = 0.05; // 5% discount for orders >= 100€
+    }
   
-    orderSummary += `\nTotal : €${totalBill.toFixed(2)}\n\nMerci pour l'attention portée à ma commande !`;
+    const discountedTotal = totalBill - totalBill * discount;
+    orderSummary += `\nTotal : €${totalBill.toFixed(2)}\n Promotion Total : €${discountedTotal.toFixed(2)} \nMerci pour l'attention portée à ma commande !`;
   
     // Encoder le message pour WhatsApp
     const message = encodeURIComponent(orderSummary);
