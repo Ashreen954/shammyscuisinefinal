@@ -266,7 +266,7 @@ function sendOrderDetailsToWhatsApp() {
     }
   
     const discountedTotal = totalBill - totalBill * discount;
-    orderSummary += `\nTotal : €${totalBill.toFixed(2)}\n Promotion Total : €${discountedTotal.toFixed(2)} \nMerci pour l'attention portée à ma commande !`;
+    orderSummary += `\nTotal : €${totalBill.toFixed(2)}\nPromotion Total : €${discountedTotal.toFixed(2)} \nMerci pour l'attention portée à ma commande !`;
   
     // Encoder le message pour WhatsApp
     const message = encodeURIComponent(orderSummary);
