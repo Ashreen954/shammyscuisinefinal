@@ -491,6 +491,11 @@
    
     <script src="homepage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    
+    <!-- Auto Refresh Script -->
+    <script>
+      setTimeout(function(){
+          location.reload(true); // true forces a full refresh (bypasses cache)
+      }, 30000); // Refreshes every 30 seconds
+  </script>
 </body>
 </html>
