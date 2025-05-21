@@ -44,12 +44,12 @@ function updateTotalBill() {
   });
 
   let discount = 0;
-  if (totalBill >= 200) {
+ /* if (totalBill >= 200) {
     discount = 0.1;  // 10% discount for orders >= 200€
   } else if (totalBill >= 100) {
     discount = 0.05; // 5% discount for orders >= 100€
   }
-
+*/
   const discountedTotal = totalBill - totalBill * discount;
 
   // Create HTML for total, discount, and final total with added styling
@@ -259,15 +259,17 @@ function sendOrderDetailsToWhatsApp() {
       serialNumber++; // Incrémenter le numéro de série pour l'article suivant
     });
     let discount = 0;
-    if (totalBill >= 200) {
+   /* if (totalBill >= 200) {
       discount = 0.1;  // 10% discount for orders >= 200€
     } else if (totalBill >= 100) {
       discount = 0.05; // 5% discount for orders >= 100€
     }
-  
+
     const discountedTotal = totalBill - totalBill * discount;
     orderSummary += `\nTotal : €${totalBill.toFixed(2)}\nPromotion Total : €${discountedTotal.toFixed(2)} \nMerci pour l'attention portée à ma commande !`;
-  
+    */
+    orderSummary += `\nTotal: €${totalBill.toFixed(2)}\nThank you for your attention to my order!`;
+
     // Encoder le message pour WhatsApp
     const message = encodeURIComponent(orderSummary);
   
